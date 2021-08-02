@@ -1,0 +1,237 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    position: relative;
+    background-color: hsl(0, 0%, 100%);
+}
+
+@font-face {
+    font-style: normal;
+    font-family: "Barlow";
+    src: url("Barlow.css"),
+    local("Barlow Regular"),
+    local("Barlow-Regular");
+}
+
+@font-face {
+    font-style: normal;
+    font-family: "Barlow Condensed";
+    src: url("Barlowcon.css"),
+    local("Barlow Condensed Regular"),
+    local("BarlowCondensed-Regular");
+}
+
+
+
+/*==========  ID Rules  ==========*/
+#header-bar {
+    width: 80%;
+    margin: 0px auto;
+    height: fit-content;
+}
+
+#ill-box {
+    width: 95%;
+    height: 100%;
+    float: right;
+    margin: 0px auto;
+    overflow-x: hidden;
+}
+
+#first-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#menu-hamburger {
+    float: right;
+    margin-top: 2%;
+}
+
+#dropdown-menu.open {
+    height: 210px;
+    transition: all 0.7s ease-in-out;
+    box-shadow: -1px -1px 10px 1px hsl(207, 33%, 95%);
+}
+
+#dropdown-menu {
+    width: 80%;
+    height: 0px;
+    overflow: hidden;
+    box-shadow: none;
+    margin: 40px auto;
+    border-radius: 5px;
+    transition: all 0.7s ease-in-out;
+    background-color: hsl(0, 0%, 100%);
+}
+
+
+
+
+
+/*==========  Class Rules  ==========*/
+.menu-wrapper {
+    padding: 15px 0px;
+}
+
+.ill-container {
+    width: 100%;
+    height: 100%;
+    margin: 15% 0%;
+}
+
+.info-section {
+    width: 85%;
+    height: 100%;
+    margin: 10% auto;
+}
+
+.ill-div {
+    width: 130%;
+    height: 100%;
+}
+
+.info-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 20%;
+    position: absolute;
+}
+
+.line-divide {
+    width: 80%;
+    height: 1px;
+    margin: 10px auto;
+    background-color: hsl(231, 7%, 65%);
+}
+
+
+.half-back {
+    width: 50%;
+    height: 100%;
+    float: right;
+    padding-bottom: 107%;
+    border-bottom-left-radius: 50px;
+    border: 1px solid hsl(207, 33%, 95%);
+    background-color: hsl(207, 33%, 95%);
+}
+
+.demo-schedule {
+    width: 130px;
+    font-size: 11px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    background-color: hsl(0, 100%, 68%);
+}
+
+.preview-line {
+    font-size: 13px;
+}
+
+
+
+
+/*==========  Element Rules  ==========*/
+h1 {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    display: inline-block;
+    margin-inline-start: 13px;
+    text-transform: uppercase;
+    color: hsl(231, 7%, 65%);
+    font-family: "Barlow Condensed";
+}
+
+h2 {
+    font-size: 35px;
+    text-align: left;
+    font-weight: 700;
+    margin: 20px 0px;
+    font-family: "Barlow";
+    text-transform: uppercase;
+    color: hsl(230, 29%, 20%);
+}
+
+p {
+    font-size: 25px;
+    text-align: left;
+    margin-top: 0px;
+    color: hsl(231, 7%, 65%);
+    font-family: "Barlow Condensed";
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    margin-top: 12%;
+    position: absolute;
+}
+
+a {
+    display: block;
+    font-weight: 700;
+    padding: 10px 0px;
+    text-align: center;
+    font-family: "Barlow";
+    text-decoration: none;
+    text-transform: uppercase;
+    color: hsl(230, 29%, 20%);
+}
+
+button {
+    width: 60px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 20px;
+    height: fit-content;
+    font-family: "Barlow";
+    color: hsl(0, 0%, 100%);
+    border: 1px solid transparent;
+    background-color: hsl(230, 29%, 20%);
+}
+
+
+
+/*==========  Animation and Pseudo Rules  ==========*/
+button:hover {
+    cursor: pointer;
+}
+
+.demo-schedule:hover {
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+/*==========  Media Queries Rules  ==========*/
+@media only screen and (orientation: landscape) {
+    #menu-hamburger {
+        margin-top: 2%;
+    }
+
+    header {
+        margin-top: 10%;
+    }
+
+    .ill-container {
+        margin-top: 5%;
+    }
+
+    .ill-div {
+        width: 100%;
+    }
+    
+    .half-back {
+        padding-bottom: 80%;
+    }
+
+    .info-section {
+        margin-top: 7%;
+    }
+}

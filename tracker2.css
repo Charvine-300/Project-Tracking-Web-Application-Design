@@ -1,0 +1,100 @@
+/*==========  ID Rules  ==========*/
+#header-bar {
+    width: 90%;
+}
+
+#first-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+#dropdown-menu {
+    width: 50%;
+    margin: 0px;
+    float: right;
+    height: fit-content;
+    background-color: transparent;
+}
+
+
+
+/*==========  Class Rules  ==========*/
+.ill-div {
+    width: 130%;
+    height: 110%;
+}
+
+.half-back {
+    width: 47%;
+    padding-bottom: 40%;
+}
+
+.menu-wrapper {
+    width: 80%;
+    float: right;
+    padding: 0px;
+    margin: 0px auto;
+}
+
+.ill-container {
+    width: 50%;
+    margin-top: 2%;
+}
+
+.line-divide {
+    padding: 3px 1px;
+    display: inline;
+    margin: 0px 10px;
+}
+
+.info-container {
+    margin-top: 17%;
+}
+
+.info-section {
+    width: 40%;
+    margin-top: 5%;
+}
+
+
+/*==========  Element Rules  ==========*/
+header {
+    margin-top: 6%;
+}
+
+a {
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1336px) {
+    a {
+        padding-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    a {
+        font-size: 11px;
+        padding: 7px;
+    }
+
+    .ill-container {
+        margin-top: 10%;
+    }
+
+    .ill-div {
+        width: 145%;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    h2 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+}
